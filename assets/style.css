@@ -19,7 +19,7 @@ body {
 .main {
     max-width: 1000px;
     margin: auto;
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
 h1 {
@@ -46,18 +46,30 @@ h3 {
 .row,
 .row > .column {
 }
+.row > a {
+    color: black;
+}
 
 /* Create four equal columns that floats next to each other */
 .column {
     float: left;
     width: 33%;
 }
+
+.content:hover {
+    box-shadow: 3px 3px 3px #e7e7e7;
+}
+
 .content {
     margin: 14px;
     background-color: white;
     min-height: 355px;
     padding: 0 30px;
     text-align: center;
+}
+
+.content img {
+    width: 100%;
 }
 
 /* Clear floats after rows */
