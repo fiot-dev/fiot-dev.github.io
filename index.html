@@ -1,109 +1,122 @@
 <html>
 	 <!-- MAIN (Center website) -->
 	 
-	 <head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-	 </head>
-	 <body>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body>
 	 
-    <div class="main">
-
-    <h1>Projects</h1>
-
-    <h2>Prototypes for BFA's Real Food Campaign</h2>
-    <p>The <a href="https://bionutrient.org">Bionutrient Food Association</a> has launched the <a href="https://bionutrient.org/site/real-food-campaign/overview">Real Food Campaign</a>, which aims to develop a technologies for measuring and tracking nutrient density in the laboratory and in the field.  We're working to develop open source IOT tools to support this initiative. </p>
-
-    <!-- Portfolio Gallery Grid -->
-    <div class="row">
-      <a href="https://gitlab.com/fiot/meta" target="blank">
-        <div class="column">
-          <div class="content">
-            <img src="assets/ecosystem.png" alt="FIOT Ecosystem">
-            <h3>FIoT Ecosystem</h3>
-            <p class = "blurb">Tools for connecting sensors and actuators on farms and in laboratories to online databases.</p>
+    <div class="header">
+      <div class="main">
+        <div class="row">
+          <div class="col-md-3 projects">
+            <h1>Projects</h1> 
+          </div>
+          <div class="col-md-9 desc">
+            <h2>Prototypes for BFA's Real Food Campaign</h2>
+            <p>The <a href="https://bionutrient.org">Bionutrient Food Association</a> has launched the <a href="https://bionutrient.org/site/real-food-campaign/overview">Real Food Campaign</a>, which aims to develop a technologies for measuring and tracking nutrient density in the laboratory and in the field.  We're working to develop open source IOT tools to support this initiative. </p>
           </div>
         </div>
-      </a>
+      </div>
+    </div>
 
-      <a href="https://gitlab.com/fiot/grovepi-onewire" target="blank">
-        <div class="column">
-          <div class="content">
-            <img src="assets/grovepi-onewire.png" alt="GrovePi Onewire Firmware">
-            <h3>GrovePi Onewire</h3>
-            <p class = "blurb">Updated firmware for the GrovePi SBC shield, to enable plug-and-play temperature probe compatibility.</p>
-          </div>
-        </div>
-      </a>
+    <div class="main gallery">
 
-      <a href="https://gitlab.com/fiot/fiot-sensor-server" target="blank">
-        <div class="column">
-          <div class="content">
-            <img src="assets/node-stack.png" alt="FIOT Ecosystem">
-            <h3>NodeJS Stack</h3>
-            <p class = "blurb">A NodeJS / javascript server for a Single Board Computer (SBC) that provides an HTTP API for sensor and actuator hardware.</p>
-          </div>
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="col-md-4">
+          <a href="https://gitlab.com/fiot/meta" target="blank">
+            <div class="content">
+              <img src="assets/ecosystem.png" alt="FIOT Ecosystem">
+              <h3>FIoT Ecosystem</h3>
+              <p class = "blurb">Tools for connecting sensors and actuators on farms and in laboratories to online databases.</p>
+            </div>
+          </a>
         </div>
-      </a>
+        
 
-      <a href="https://gitlab.com/fiot/simple-flask-gateway" target="blank">
-        <div class="column">
-          <div class="content">
-            <img src="assets/flask-stack.png" alt="FIOT Ecosystem">
-            <h3>Flask Stack</h3>
-            <p class = "blurb">A Flask / Python server for a Single Board Computer (SBC) that provides an HTTP API for sensor and actuator hardware.</p>
-          </div>
+        <div class="col-md-4">
+          <a href="https://gitlab.com/fiot/grovepi-onewire" target="blank">
+            <div class="content">
+              <img src="assets/grovepi-onewire.png" alt="GrovePi Onewire Firmware">
+              <h3>GrovePi Onewire</h3>
+              <p class = "blurb">Updated firmware for the GrovePi SBC shield, to enable plug-and-play temperature probe compatibility.</p>
+            </div>
+          </a>
         </div>
-      </a>
 
-      <a href="https://gitlab.com/fiot/browser-flask-pi-USB" target="blank">
-        <div class="column">
-          <div class="content">
-            <img src="assets/docker-flask.png" alt="FIOT Ecosystem">
-            <h3>Dockerized Flask</h3>
-            <p class = "blurb">A SBC-compatible Docker container for a Flask / Python server that provides an HTTP API for sensor and actuator hardware.</p>
-          </div>
+        <div class="col-md-4">
+          <a href="https://gitlab.com/fiot/fiot-sensor-server" target="blank">
+            <div class="content">
+              <img src="assets/node-stack.png" alt="FIOT Ecosystem">
+              <h3>NodeJS Stack</h3>
+              <p class = "blurb">A NodeJS / javascript server for a Single Board Computer (SBC) that provides an HTTP API for sensor and actuator hardware.</p>
+            </div>
+          </a>
         </div>
-      </a>
 
-      <a href="http://farmhack.org/tools/collecting-sensor-data-farmos-using-grovepi-and-node-red" target="blank">
-        <div class="column">
-          <div class="content">
-            <img src="assets/grovepi-nodered-3.png" alt="FIOT Ecosystem">
-            <h3>GrovePi:NodeRed:FarmOS</h3>
-            <p class = "blurb">Video tutorial demonstrating the use of Node-Red to connect sensors on a GrovePi shield and a Raspberry Pi to FarmOS.</p>
-          </div>
+        <div class="col-md-4">
+          <a href="https://gitlab.com/fiot/simple-flask-gateway" target="blank">
+            <div class="content">
+              <img src="assets/flask-stack.png" alt="FIOT Ecosystem">
+              <h3>Flask Stack</h3>
+              <p class = "blurb">A Flask / Python server for a Single Board Computer (SBC) that provides an HTTP API for sensor and actuator hardware.</p>
+            </div>
+          </a>
         </div>
-      </a>
 
-      <a href="https://gitlab.com/fiot/raspbian-headless-networking-config" target="blank">
-        <div class="column">
-          <div class="content">
-            <img src="assets/rpi-snap.png" alt="FIOT Ecosystem">
-            <h3>RPi Networking</h3>
-            <p class = "blurb">Steps for setting 'headless networking setup' for ssh and wifi on a Raspberry Pi.</p>
-          </div>
+        <div class="col-md-4">
+          <a href="https://gitlab.com/fiot/browser-flask-pi-USB" target="blank">
+            <div class="content">
+              <img src="assets/docker-flask.png" alt="FIOT Ecosystem">
+              <h3>Dockerized Flask</h3>
+              <p class = "blurb">A SBC-compatible Docker container for a Flask / Python server that provides an HTTP API for sensor and actuator hardware.</p>
+            </div>
+          </a>
         </div>
-      </a>
 
-      <a href="https://gitlab.com/fiot/fiot-grovepi-sensor-server" target="blank">
-        <div class="column">
-          <div class="content">
-            <img src="assets/grovepi-nodejs-server.png" alt="FIOT Ecosystem">
-            <h3>NodeJS GrovePi Stack</h3>
-            <p class = "blurb">A NodeJS server that provides HTTP access to GrovePi sensors. </p>
-          </div>
+        <div class="col-md-4">
+          <a href="http://farmhack.org/tools/collecting-sensor-data-farmos-using-grovepi-and-node-red" target="blank">
+            <div class="content">
+              <img src="assets/grovepi-nodered-3.png" alt="FIOT Ecosystem">
+              <h3>GrovePi:NodeRed:FarmOS</h3>
+              <p class = "blurb">Video tutorial demonstrating the use of Node-Red to connect sensors on a GrovePi shield and a Raspberry Pi to FarmOS.</p>
+            </div>
+          </a>
         </div>
-      </a>
 
-      <a href="https://https://gitlab.com/fiot/nofa-march-2018" target="blank">
-        <div class="column">
-          <div class="content">
-            <img src="assets/nofa-sprint.png" alt="FIOT Ecosystem">
-            <h3>NOFA 3/2018</h3>
-            <p class = "blurb">Code and project details for demonstrating software and hardware at the CT NOFA 2018 Winter Conference.</p>
-          </div>
+        <div class="col-md-4">
+          <a href="https://gitlab.com/fiot/raspbian-headless-networking-config" target="blank">
+            <div class="content">
+              <img src="assets/rpi-snap.png" alt="FIOT Ecosystem">
+              <h3>RPi Networking</h3>
+              <p class = "blurb">Steps for setting 'headless networking setup' for ssh and wifi on a Raspberry Pi.</p>
+            </div>
+          </a>
         </div>
-      </a>
+
+        <div class="col-md-4">
+          <a href="https://gitlab.com/fiot/fiot-grovepi-sensor-server" target="blank">
+            <div class="content">
+              <img src="assets/grovepi-nodejs-server.png" alt="FIOT Ecosystem">
+              <h3>NodeJS GrovePi Stack</h3>
+              <p class = "blurb">A NodeJS server that provides HTTP access to GrovePi sensors. </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://https://gitlab.com/fiot/nofa-march-2018" target="blank">
+            <div class="content">
+              <img src="assets/nofa-sprint.png" alt="FIOT Ecosystem">
+              <h3>NOFA 3/2018</h3>
+              <p class = "blurb">Code and project details for demonstrating software and hardware at the CT NOFA 2018 Winter Conference.</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
     <!-- END MAIN -->
   </body>
