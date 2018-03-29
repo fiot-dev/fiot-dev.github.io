@@ -1,0 +1,89 @@
+{
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+body {
+    background-color: #f7f7f7;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    word-break: break-all;
+}
+
+h2 {
+    font-size: 20px;
+    word-break: break-all;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 5px 0 0 0;
+}
+
+.row {
+    margin: 14px -28px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33%;
+}
+.content {
+    margin: 14px;
+    background-color: white;
+    min-height: 355px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Blurb */
+.blurb {
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
