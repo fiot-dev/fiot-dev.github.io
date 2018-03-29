@@ -19,7 +19,7 @@ body {
 .main {
     max-width: 1000px;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 h1 {
@@ -30,6 +30,7 @@ h1 {
 h2 {
     font-size: 20px;
     word-break: break-all;
+    margin: 10px 0 -10px 0;
 }
 
 h3 {
@@ -69,7 +70,7 @@ h3 {
 /* Blurb */
 .blurb {
     padding: 10px;
-    font-size: 12px;
+    font-size: .8em;
     text-align: center;
 }
 
