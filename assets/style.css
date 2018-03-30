@@ -12,7 +12,12 @@ img {
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-weight: 300;
+    letter-spacing: .08em;
 }
 
 /* Center website */
@@ -22,23 +27,36 @@ body {
 }
 
 .header {
-    padding: 50px 20px 30px 20px;
+    padding: 30px 20px;
     background-color: #f7f7f7;
 }
 
 .projects {
     font-size: 2.4em;
-    border-right: 1px solid #c7c7c7;
-    padding-right: 40px;
-    text-align: right;
+    text-transform: uppercase;
 }
 
 .projects h1 {
     margin-top: 35px;
+    letter-spacing: .08em;
+    font-weight: 300;
 }
 
 .desc {
     padding-left: 50px;
+}
+
+.sidebar {
+    padding-top: 40px;
+}
+
+.sidebar p {
+    letter-spacing: 0;
+}
+
+.gallery {
+    max-height: 600px;
+    overflow-y: scroll;
 }
 
 h2 {
@@ -47,8 +65,10 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
-    font-weight: normal;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .10em;
 }
 
 .gallery a {
@@ -66,10 +86,6 @@ h3 {
 
 .content img {
     width: 100%;
-}
-
-.content:hover p {
-    border-top: 1px solid #c7c7c7;
 }
 
 /* Clear floats after rows */
